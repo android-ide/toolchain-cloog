@@ -4,9 +4,16 @@
    */
 #undef GCC_WARN_UNUSED_RESULT
 
+/* Define to 1 if you have the declaration of `ffs', and to 0 if you don't. */
+#undef HAVE_DECL_FFS
+
 /* Define to 1 if you have the declaration of `mp_get_memory_functions', and
    to 0 if you don't. */
 #undef HAVE_DECL_MP_GET_MEMORY_FUNCTIONS
+
+/* Define to 1 if you have the declaration of `__builtin_ffs', and to 0 if you
+   don't. */
+#undef HAVE_DECL___BUILTIN_FFS
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #undef HAVE_DLFCN_H

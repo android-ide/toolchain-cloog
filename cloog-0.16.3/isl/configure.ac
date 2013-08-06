@@ -39,6 +39,8 @@ AC_CHECK_DECLS(mp_get_memory_functions,[],[
 ],[#include <gmp.h>])
 CPPFLAGS="$SAVE_CPPFLAGS"
 AM_CONDITIONAL(NEED_GET_MEMORY_FUNCTIONS, test x$need_get_memory_functions = xtrue)
+AC_CHECK_DECLS(ffs,[],[],[#include <strings.h>])
+AC_CHECK_DECLS(__builtin_ffs,[],[],[])
 
 AX_SUBMODULE(piplib,no|system|build,no)
 
